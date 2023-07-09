@@ -63,7 +63,7 @@ const Navbar = () => {
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <div className="navbar-icons text-center pt-1">
                                 <i className="fas fa-bell fa-fw"></i>
-                                {/*  <!-- Counter - Alerts --> */}
+                                {/*  <!-- Counter - Alert --> */}
                                 <div className="navbar-icon-circle"></div>
                             </div>
                         </a>
