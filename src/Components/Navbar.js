@@ -157,25 +157,9 @@ const Navbar = () => {
                                         alt="..." />
                                     <div className="status-indicator bg-warning"></div>
                                 </div>
-                                <div>
-                                    <div className="text-truncate">Last month's report looks great, I am very happy with
-                                                        the progress so far, keep up the good work!</div>
-                                    <div className="small text-gray-500">Morgan Alvarez · 2d</div>
-                                </div>
+
                             </a>
-                            <a className="dropdown-item d-flex align-items-center" href="#">
-                                <div className="dropdown-list-image mr-3">
-                                    <img className="rounded-circle" src="https://source.unsplash.com/Mv9hjnEUHR4/60x60"
-                                        alt="..." />
-                                    <div className="status-indicator bg-success"></div>
-                                </div>
-                                <div>
-                                    <div className="text-truncate">Am I a good boy? The reason I ask is because someone
-                                                        told me that people say this to all dogs, even if they aren't good...</div>
-                                    <div className="small text-gray-500">Chicken the Dog · 2w</div>
-                                </div>
-                            </a>
-                            <a className="dropdown-item text-center small text-gray-500" href="#">Read More Messages</a>
+
                         </div>
                     </li>
 
@@ -185,11 +169,11 @@ const Navbar = () => {
 
                         <a className="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <div className="navbar-icons text-center">
 
-                                <img className="img-profile"
-                                    src="img/undraw_profile.svg" />
-                            </div>
+
+                            <img className="profileImage"
+                                src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAIoAXAMBIgACEQEDEQH/xAAcAAACAwEBAQEAAAAAAAAAAAADBAUGBwIBAAj/xAA8EAACAQMDAgMDBwsFAQAAAAABAgMABBEFEiEGMRNBUTJhcQciM1KBkaEUIzVCU2KCscHR4RZDcnOyFf/EABgBAAMBAQAAAAAAAAAAAAAAAAABAwIE/8QAHhEBAQACAwADAQAAAAAAAAAAAAECEQMhMRJBcRP/2gAMAwEAAhEDEQA/ALHHHTCJXyLRlWtMvglehKIoroCgBbK4ZKZ21yy0AmyUF091OstBdaAjpI+O1KSxVKutKyR0wh5oe/FJPDzU1NHSjxc0EtaijKK5UUVRSadAV1j3V6Ko/wAoHUz2BTTbN3WSQfn3TgonoD5E+tFuhJtJa91dZ6ZcGytYnvL79nH7Kn3n+gpCDWtYngWRZrUO7YBaM7M/VOOV+NVkJHdxxvpqqlxAwYBzjJx6++ga1qNzArTTLdWFywAbgNHJ9ufxqOWVvisxkXebqOTTgn/1bcBW43xnsfh5/fUhpurWGrRF7G4R8e0ucMvxFYzL1Rezho7spcRsNrow4YevuPvqOtr2S0uFnsJpoJQ3BVsVrG5fbOUn0391peRKT6YvJ77Ske7ffMvDNjGakXFUTIyJSrR81ISLS7LzTCeWirQloq0G77KT6V+fdTu7q86juLmLe1xLMSoBPbPHb3Vv8ys8EixttdkIVvQ471kvyX6fHda/cT3IDCFQNx7Ak1PPqN4d3R/ROj9XumWa5jhg3Y9hMHH2Va16At5YVF68kuOwLHAqzv1BoWnusE99AknACs4zUkms2Ese5ZFK4zkGofro88jObroDS0gIEJDcjNUXrHpRdIjSeD2VI3g1sWo9WaBFMYZL6FJfqk1RflHvYLrS2NpIkiMpzilNynlqztHfJnqzy3UmnZ/N+HvAz2Ix/OtAesn+SdGPUkpAyqW7ZPlyRWtMK6p446WkFLsOaacUBhzWiSy9qIpoSGiLQY2TjjvWW9NaTeSajdLas0Cs8qmESEbnBDKW9fmlh/DWoLUBYW9vp+t3qk5Esgn2v+qTxx9386nnVeKbqt33Tmu3D7HuEXHdFtj/AOscj7abh6a1uHpvU7qPVjELb2LcQK4k2jLDceRzkfEVcb3UI5CLeBmeZxwqzt+PNPb7JNBMEc8fg+Hjch4wPT7ajtb4MauNC1kRiWR4QCc7DGcEfEDvUbe2l6kcYcMquxDqDwVAJPftWn6PKiWixSOCvOxo5GCMv7vu91V3ri7tobZ/CUtKUI3Fi2Pd9+KJlui4alQPyaSQwXV9LGpXeVCBjnC5PFagrB0BFY10/cmxfaTgnGfsrUdDvBcWq8810zxyWdpB6A3ejPzQWHNMkkpoqml0NFU0GODVS62xbS2t2hKln8OQj0xkVaQaq3XqeLppTOCSMH0NZym4ctl6Rektf6VPNfS2clzFIceLH8/avlwKoepx6hbmWKCS5jtJXY7CHUDnt2rSegtQW4t5LSSQJKnBBPai9R9O3tzdrIl7D4XcgrzXNjfi6+soo+l3GqvpEVnaxPst8t4xyu3Jz596Q1+8fxWjZhJhgCc5BI7/AI1PdRSNpGm/ksc4M0h528YFUebeSpfswyP71vCbu0+TLXUFhmYzbmOSTWh9JXZVFQnjFZ1AMyL8aumiEx7CKvHNWg7wVoZ70C0l3xLk84opbmmD6miqaVQ5oqmgzAaq/wBXR+NZYHqKnFySAOSaDq+ly/k4a4XYDyF86zbqbOS29Ml1KG6sNQa4tXdH7gg15J1NqBiO+5PIA58qtuq2KyAkrkiq1eaVD9Q5HbFc8svrpuFniAbxL6ffK7OcnLE+VcaohDxPghSuPxqchs1QbVXGe9OnTo51VHQMp8jT+eqz/O2Kha/Sr8auel/RLT2m9B297BJJDI8MqH5p7qfiKL/p7U9MH56Deg/Xj5H96vjlLNufKWXSTsJsIBmn92fOoK3k2kZqRWUbe9aKJWN6lNN064vmGxdsf127f5prRdBCKs1+N0h5Efkvx9as8e1FAUAD3CltoOw0y3skGxd0nm7d/wDFL69ZG+s2Ef0qc49RUiHxQ5SG5B5rN7mjl1dsrvoTGzBlI8u1V2+XBNa9qWn2t5n8oiw37SPvVZvOlbR3yLlf4hio3js8XnJL6z+3t2lcBVJqx6fo8smwBPnE8CrDZ6BaQsMzK2OwRc1O20ccCYgQLn9Y8saU47fReWTwpZWC2dukIwW7sR61IJGpHIrk9+2BRVPFXnTnvaL1Lpuwvcv4fhS/Xj4quzdLahHIVhMcieTFtv4Vegwx3rhmGaey0MswHFdi4UedQsV2XhEnHicq4HkwODTNuSw5OaRpTxciuHahqQBXzNQHDsc0GQZrsmuHYKuWIA9TwKACwruMYoQuIHbak0bN6BwTRAcUAQ1yWwDXhahO4xQHvjHcB9tLSXR8VwOcHFCmnVXAzzS9ufE8Vif91qAj7K+zqBjBBjuEEqEHzx/UY+6p60udy1n2ks2/QDuOSMZz5YarpZex9tATaS1886gMzMAqjJNJA/mjS+qfoi4/66Ct1NpCOdZ4hIjHY3Y9qBJbWrtukt4nPq6hj95pfS/0Zbf8KFrTMmlXTKxVhE2CD7qMuqJdxG3+p9MIzrLHZyuj7NqQBjuxnjj3d6TturNBhRhYXhiPtCGcOI29wJyF/Ae6s0eR1ikVXYB8BgD7Q570u/smp2tN2tNQivbSO4gbKSKD3HHuriafGeazz5OpHE7xh2CFiSueD830q63PY1uXoi93eKsyZIB3Yqs6t1Zdadfy21nCJVU5cnyY84+7FMauxFzDgn6UfzqFmVWv74sAT4/mP3Vph//Z" />
+
                         </a>
                         {/*  <!-- Dropdown - User Information --> */}
                         <div className="dropdown-menu dropdown-menu-right shadow animated--grow-in"

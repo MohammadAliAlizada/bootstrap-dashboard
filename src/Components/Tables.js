@@ -82,11 +82,6 @@ const Tables = () => {
                 </div>
             </div>
         </div >
-
-
-
-
-
     )
 }
 

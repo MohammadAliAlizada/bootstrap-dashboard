@@ -4,9 +4,11 @@ import Sidebar from './Components/Sidebar'
 import Navbar from './Components/Navbar';
 
 import RecentStats from './Components/RecentStats';
-import Charts from './Components/Charts';
+
 import Tables from './Components/Tables';
 import Footer from './Components/Footer';
+import AreaChart from './Components/Charts';
+import NewAreaChart from './Components/NewAreaChart'
 
 function Dashboard() {
 
@@ -20,6 +22,8 @@ function Dashboard() {
                             <div className="container-fluid">
                                 <Navbar />
                                 <RecentStats />
+                                <AreaChart />
+                                <NewAreaChart />
                                 <Tables />
                             </div>
                         </div>

@@ -1,30 +1,24 @@
-import React, { useState } from 'react'
+import React from 'react'
 import WeeklyActivity from './WeeklyActivity';
+import CircularProgress from './CircularProgress';
 
 const RecentStats = () => {
-    const [recentStat, setRecentStat] = useState("Select Days")
     return (
-
-
         <div className="row">
 
             {/*   <!-- Area Chart --> */}
             <div className="col-xl-8 col-lg-7 text-white">
                 <div className="d-flex ">
                     <h2>Recent Stats</h2>
-                    <ul style={{ listStyle: 'none', marginLeft: '300px' }}>
-                        <li class="nav-item border-bottom dropdown">
-                            <a style={{ color: 'white' }} class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                {recentStat}
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" onClick={() => setRecentStat('7Days')} href="#">7Days</a>
-                                <a class="dropdown-item" onClick={() => setRecentStat('8Days')} href="#">8Days</a>
 
-                                <a class="dropdown-item" onClick={() => setRecentStat('9Days')} href="#">9Days</a>
-                            </div>
-                        </li>
-                    </ul>
+                    <div className="">
+                        <select className="dropdownStats">
+                            <option className="border-0" value="Select an option" disabled selected>Select an option</option>
+                            <option className="border-0" value="Days 1">Days 1</option>
+                            <option className="border-0" value="Days 2">Days 2</option>
+                            <option className="border-0" value="Days 3">Days 3</option>
+                        </select>
+                    </div>
                 </div>
                 <div className="row">
 
@@ -96,7 +90,8 @@ const RecentStats = () => {
                         </div>
                     </div>
                     <div className="progress-section">
-                        <WeeklyActivity />
+                        {/* <WeeklyActivity /> */}
+                        <CircularProgress className="-mt-2" />
 
                     </div>
                 </div>
